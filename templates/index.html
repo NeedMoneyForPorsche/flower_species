@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower Species Prdiction</title>
+    <title>Flower Species Prediction</title>
     <style>
         input {
             margin: .5rem;
@@ -22,15 +22,15 @@
     <h1>Flower Species Prediction</h1>
     <form action="" method="post">
         <input type="number" name="s_len" id="" placeholder="SepalLength(in Cm)" required> <br>
-        <input type="number" name="s_width" id="" placeholder="SepalWidth( in Cm)" >  <br>
+        <input type="number" name="s_width" id="" placeholder="SepalWidth( in Cm)" required>  <br>
         <input type="number" name="p_len" id="" placeholder="PetalLength(in Cm)"> <br>
         <input type="number" name="p_width" id="" placeholder="PetalWidth(in Cm)"> <br>
 
         <button type="submit">Predict</button>
     </form>
 
-    {% if res %}
-        <h2>{{ res }}</h2>
+    {% if result %}
+        <h2>{{ result }}</h2>
     {% endif %}
     
 </body>
