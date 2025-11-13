@@ -22,7 +22,7 @@ def home():
 
             pred = model.predict(X_scaled)
             print(pred)
-            return render_template("index.html", result=f"Predicted Flower Species: {pred[0]}")
+            return render_template("index.html", result=f"Predicted Flower Species: {pred}")
         except Exception as e:
             return render_template("index.html", result = f"Error: {e}")
     return render_template("index.html")
